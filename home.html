@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Upload Image</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f5f5f5;
+        text-align: center;
+      }
+      h1 {
+        color: #333;
+        margin-top: 50px;
+      }
+      form {
+        margin-top: 50px;
+      }
+      label {
+        display: block;
+        margin-bottom: 10px;
+      }
+      input[type="file"] {
+        border: none;
+        padding: 10px;
+        background-color: #fff;
+        box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.2);
+        font-size: 16px;
+        width: 100%;
+        margin-bottom: 10px;
+        cursor: pointer;
+      }
+      input[type="submit"] {
+        background-color: #333;
+        color: #fff;
+        padding: 10px;
+        border: none;
+        cursor: pointer;
+        font-size: 16px;
+        transition: background-color 0.3s;
+      }
+      input[type="submit"]:hover {
+        background-color: #555;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Extract Text from Images</h1>
+    <form action="/upload" method="post" enctype="multipart/form-data">
+      <label for="image">Select an image to upload:</label>
+      <input type="file" name="image" id="image" accept=".jpg, .jpeg, .png">
+      <input type="submit" value="Extract Text">
+    </form>
+    <footer>
+      <p>Copyright &copy; @Saurabh_Borkar</p>
+    </footer>
+  </body>
+</html>
